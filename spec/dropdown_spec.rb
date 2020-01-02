@@ -1,4 +1,4 @@
-describe 'Caixa de seleção', :dropdown do 
+describe 'Caixa de opções', :dropdown do 
 
   it 'selecionando uma opção' do
     visit 'https://training-wheels-protocol.herokuapp.com/dropdown'
@@ -9,6 +9,7 @@ describe 'Caixa de seleção', :dropdown do
     visit 'https://training-wheels-protocol.herokuapp.com/dropdown'
     drop = find('.avenger-list')
     drop.find('option', text: 'Scott Lang').select_option
+    sleep 3 
   end
 
   it 'selecionando uma opção randômica' do 
