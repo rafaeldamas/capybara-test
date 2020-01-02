@@ -13,7 +13,7 @@ describe 'Formulários' do
     
   end
 
-  it 'falha no login' do 
+  it 'falha no login', :forms do 
     visit 'https://training-wheels-protocol.herokuapp.com/login'
 
     fill_in 'username', with: 'stark123'
